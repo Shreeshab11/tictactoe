@@ -1,0 +1,67 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+
+#gameBoard {
+    display: none;
+    text-align: center;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); 
+    grid-template-rows: repeat(3, 100px);    
+    gap: 5px;
+    margin-top: 20px;
+}
+
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #333;
+    background-color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#registrationDiv {
+    text-align: center;
+}
+
+#registrationDiv input {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+pre {
+    position: absolute;
+    top: 10px;    
+    right: 10px;  
+    font-family: Arial, sans-serif; 
+    font-size: 16px;  
+    background-color: #f0f0f0; 
+    padding: 10px;   
+    border-radius: 5px; 
+}
